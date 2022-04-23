@@ -18,6 +18,11 @@ body {
   margin: 0 auto 0 auto;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,5 +122,127 @@ header .title button p {
   text-align: center;
   margin-left: 30px;
   padding-bottom: 10px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .working {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+main .working .block__steps {
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .working .block__steps .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 90%;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding-right: 25px;
+  -webkit-box-shadow: 5px 5px 10px #e0e0e0;
+          box-shadow: 5px 5px 10px #e0e0e0;
+  font-size: 20px;
+}
+
+main .working .block__steps .step .nbr {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 5px 10px 3px 10px;
+  z-index: 1;
+  margin: 0 15px 0 -15px;
+}
+
+main .restaurants {
+  background-color: #f7f7f7;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .restaurants .block__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1100px;
+}
+
+main .restaurants .block__card .resto__card {
+  width: 90%;
+  max-width: 450px;
+  border-radius: 25px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px #e0e0e0;
+          box-shadow: 5px 5px 10px #e0e0e0;
+}
+
+main .restaurants .block__card .resto__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px 25px 0 0;
+  height: 150px;
+  width: 100%;
+}
+
+main .restaurants .block__card .resto__card .card_info {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

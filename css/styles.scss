@@ -15,6 +15,10 @@ body {
     max-width: 1500px;
     margin: 0 auto 0 auto;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary : #99E2D0;
@@ -81,6 +85,75 @@ header {
                 text-align: center;
                 margin-left: 30px;
                 padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .working {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 80px;
+        .block__steps {
+            height: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .step {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100px;
+                width: 90%;
+                background-color: #f7f7f7;
+                border-radius: 20px;
+                padding-right: 25px;
+                box-shadow: 5px 5px 10px #e0e0e0;
+                font-size: 20px;
+                .nbr {
+                    color: white;
+                    background-color: $color-primary;
+                    border-radius: 100%;
+                    padding: 5px 10px 3px 10px;
+                    z-index: 1;
+                    margin: 0 15px 0 -15px;
+                }
+            }
+        }
+    }
+    .restaurants {
+        background-color: #f7f7f7;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .block__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 1100px;
+            .resto__card {
+                width: 90%;
+                max-width: 450px;
+                border-radius: 25px;
+                background-color: white;
+                box-shadow: 5px 5px 10px #e0e0e0;
+                img {
+                    object-fit: cover;
+                    border-radius: 25px 25px 0 0;
+                    height: 150px;
+                    width: 100%;
+                }
+                .card_info {
+                    padding-left: 20px;
+                }
             }
         }
     }
