@@ -1,0 +1,17 @@
+/*GENERAL*/
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../polices/Shrikhand-Regular.ttf");
+    font-family: "Roboto";
+    src: url("../polices/Roboto-Medium.ttf");
+}
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    max-width: 1500px;
+    margin: 0 auto 0 auto;
+}
