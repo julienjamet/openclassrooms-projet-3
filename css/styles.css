@@ -46,7 +46,7 @@ header a {
 
 header img {
   max-height: 110px;
-  width: 99.5%;
+  width: 100%;
   padding: 30px 20% 30px 20%;
   -webkit-box-shadow: 0px 3px 6px;
           box-shadow: 0px 3px 6px;
@@ -153,6 +153,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 main .working {
