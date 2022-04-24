@@ -290,7 +290,6 @@ main .restaurants .block__card .resto__card img {
   border-radius: 25px 25px 0 0;
   height: 70%;
   width: 100%;
-  border: 2px solid green;
   object-fit: cover;
 }
 
@@ -306,7 +305,6 @@ main .restaurants .block__card .resto__card .card_info {
       justify-content: space-around;
   padding-left: 20px;
   margin-top: -8px;
-  border: 1px solid red;
 }
 
 main .restaurants .block__card .resto__card .card_info h3 {
