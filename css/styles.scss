@@ -187,10 +187,8 @@ main {
                     border-radius: 25px 25px 0 0;
                     height: 70%;
                     width: 100%;
-                    object-position: 0 -80px;
-                }
-                #note_enchantée {
-                    object-position: 0 -180px;
+                    border: 2px solid green;
+                    object-fit: cover;
                 }
                 .card_info {
                     display: flex;
@@ -198,6 +196,7 @@ main {
                     justify-content: space-around;
                     padding-left: 20px;
                     margin-top: -8px;
+                    border: 1px solid red;
                     h3 {
                         margin-bottom: -10px;
                     }

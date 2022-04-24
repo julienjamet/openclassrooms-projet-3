@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*GENERAL*/
 * {
   box-sizing: border-box;
@@ -291,13 +290,8 @@ main .restaurants .block__card .resto__card img {
   border-radius: 25px 25px 0 0;
   height: 70%;
   width: 100%;
-  -o-object-position: 0 -80px;
-     object-position: 0 -80px;
-}
-
-main .restaurants .block__card .resto__card #note_enchantée {
-  -o-object-position: 0 -180px;
-     object-position: 0 -180px;
+  border: 2px solid green;
+  object-fit: cover;
 }
 
 main .restaurants .block__card .resto__card .card_info {
@@ -312,6 +306,7 @@ main .restaurants .block__card .resto__card .card_info {
       justify-content: space-around;
   padding-left: 20px;
   margin-top: -8px;
+  border: 1px solid red;
 }
 
 main .restaurants .block__card .resto__card .card_info h3 {
