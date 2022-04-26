@@ -28,19 +28,17 @@ h2 {
 }
 
 header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-header a {
+header i {
+  position: absolute;
+  top: 38%;
+  left: 8%;
+  font-size: 30px;
   width: 100%;
 }
 
@@ -53,19 +51,13 @@ header img {
   border: none;
   -o-object-fit: fill;
      object-fit: fill;
-  font-size: 10px;
 }
 
-header img:nth-child(2) {
-  max-height: 260px;
-  padding: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+.intro {
+  width: 100%;
 }
 
-header .location {
+.intro .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,11 +73,11 @@ header .location {
   margin-top: 5px;
 }
 
-header .location i {
+.intro .location i {
   margin-right: 15px;
 }
 
-header .title {
+.intro .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,40 +98,38 @@ header .title {
   text-align: center;
 }
 
-header .title h2 {
+.intro .title h2 {
   font-size: 30px;
   width: 80%;
   margin: 0;
 }
 
-header .title p {
+.intro .title p {
   font-size: 25px;
   color: grey;
   width: 80%;
 }
 
-header .title button {
+.intro .title button {
   border-radius: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 300px;
   height: 70px;
+  width: 250px;
   border: none;
   cursor: pointer;
 }
 
-header .title button:hover {
+.intro .title button:hover {
   border: 2px solid grey;
   -webkit-box-shadow: 4px 6px 10px #cfcece, -4px -4px 10px #cfcece;
           box-shadow: 4px 6px 10px #cfcece, -4px -4px 10px #cfcece;
 }
 
-header .title button p {
+.intro .title button p {
+  width: 100%;
   color: white;
   font-size: 20px;
-  text-align: center;
-  margin-left: 30px;
-  padding-bottom: 10px;
 }
 
 main {
@@ -180,7 +170,7 @@ main .working h2 {
 
 main .working .block__steps {
   height: 360px;
-  width: 100%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +240,7 @@ main .working .block__steps .step .step__main {
 
 main .working .block__steps .step .step__main i {
   color: grey;
-  padding: 40px 270px 40px 40px;
+  padding: 40px 280% 40px 40px;
   z-index: 1;
 }
 
