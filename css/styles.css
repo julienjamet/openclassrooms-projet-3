@@ -252,7 +252,7 @@ main .working .block__steps .step .step__main {
 
 main .working .block__steps .step .step__main i {
   color: grey;
-  padding: 40px 280% 40px 40px;
+  padding: 40px 0 40px 40px;
   z-index: 1;
 }
 
@@ -263,7 +263,7 @@ main .working .block__steps .step .step__main p {
 
 main .working .block__steps .step:hover {
   background-color: rgba(147, 86, 220, 0.2);
-  cursor: pointer;
+  cursor: default;
 }
 
 main .working .block__steps .step:hover i {
@@ -336,6 +336,7 @@ main .restaurants .block__card .resto__card .new {
 }
 
 main .restaurants .block__card .resto__card .card_info {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,14 +355,22 @@ main .restaurants .block__card .resto__card .card_info h3 {
 }
 
 main .restaurants .block__card .resto__card .card_info i {
+  position: absolute;
+  right: 10%;
+  top: 20px;
   font-size: 25px;
-  margin-top: -10px;
-  -webkit-transition: color 2000ms;
-  transition: color 2000ms;
 }
 
-main .restaurants .block__card .resto__card .card_info i:active {
+main .restaurants .block__card .resto__card .card_info .fa-solid {
   color: #9356DC;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: opacity 1500ms;
+  transition: opacity 1500ms;
+}
+
+main .restaurants .block__card .resto__card .card_info .fa-solid:hover {
+  opacity: 1;
 }
 
 main .menu {

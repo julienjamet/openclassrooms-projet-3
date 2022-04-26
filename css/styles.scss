@@ -29,7 +29,8 @@ h2 {
 }
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
-$color-tertiary : #99E2D0;
+$color-tertiary: #99E2D0;
+$gradient: linear-gradient(170deg, $color-secondary, $color-primary);
 
 header {
     display: flex;
@@ -88,7 +89,7 @@ header {
         }
         button {
             border-radius: 50px;
-            background: linear-gradient(170deg, $color-secondary, $color-primary);
+            background: $gradient;
             height: 70px;
             width: 250px;
             border: none;
@@ -164,7 +165,7 @@ main {
                     align-items: center;
                     i {
                         color: grey;
-                        padding: 40px 280% 40px 40px;
+                        padding: 40px 0 40px 40px;
                         z-index: 1;
                     }
                     p {
@@ -177,7 +178,7 @@ main {
                         color: $color-primary;
                     }
                     background-color: rgba(147, 86, 220, 0.2);
-                    cursor: pointer;
+                    cursor: default;
                 }      
             }
         }
@@ -222,6 +223,7 @@ main {
                     border-radius: 5px;
                 }
                 .card_info {
+                    position: relative;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -231,12 +233,19 @@ main {
                         margin-bottom: -10px;
                     }
                     i {
+                        position: absolute;
+                        right: 10%;
+                        top: 20px;
                         font-size: 25px;
-                        margin-top: -10px;
-                        transition: color 2000ms;
-                        &:active {
-                            color: $color-primary;
-                        }
+                    }
+                    .fa-solid {
+                        color: $color-primary;
+                        z-index: 1;
+                        opacity: 0;
+                        transition: opacity 1500ms;
+                        &:hover {
+                            opacity: 1;
+                        } 
                     }
                 }
             }
