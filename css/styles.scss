@@ -265,12 +265,13 @@ main {
             justify-content: space-between;
             align-items: center;
             padding: 0;
+            margin: 0 -10px 0 -10px;
             h2 {
                 margin-left: 0;
             }
             i {
                 position: absolute;
-                right: 5%;
+                right: 0;
                 top: 20px;
                 font-size: 25px;
                 cursor: pointer;

@@ -393,6 +393,7 @@ main .menu .menu_title {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+  margin: 0 -10px 0 -10px;
 }
 
 main .menu .menu_title h2 {
@@ -401,7 +402,7 @@ main .menu .menu_title h2 {
 
 main .menu .menu_title i {
   position: absolute;
-  right: 5%;
+  right: 0;
   top: 20px;
   font-size: 25px;
   cursor: pointer;
