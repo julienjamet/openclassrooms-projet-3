@@ -284,45 +284,79 @@ main {
             .dish {
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-end;
                 background-color: white;
-                height: 80px;
+                min-height: 80px;
+                max-height: 100px;
                 width: 100%;
                 max-width: 375px;
                 border-radius: 20px;
                 box-shadow: 5px 5px 10px #e0e0e0;
-                padding: 0 0 0 10px;
+                padding: 0 5px 0 5px;
                 margin-bottom: 20px;
                 overflow: hidden;
                 &_main {
-                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-height: 100%;
+                    width: 85%;
                     overflow: hidden;
+                    transition: overflow 400ms 400ms;
                     h4 {
-                        margin-bottom: -5px;
+                        margin: 5px 0 5px 0;
+                        transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+                    }
+                    p {
+                        margin: 0;
+                        transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
                     }
                 }
                 &_price {
+                    align-self: flex-end;
                     font-weight: bold;
+                    padding-right: 40px;
                 }
                 & i {
-                    height: 100%;
+                    min-height: 80px;
                     width: 0%;
                     align-self: center;
                     font-size: 20px;
-                    color: #f7f7f7;
-                    background-color: #f7f7f7;
-                    padding: 8% 14% 5% 8%;
+                    color: white;
+                    background-color: $color-tertiary;
+                    padding: 30px 14% 30px 8%;
                     border-radius: 0 20px 20px 0;
-                    margin-right: -90px;
-                    transition: color 1200ms, background-color 1200ms, margin-right 800ms;
+                    margin-right: -100px;
+                    margin-left: 0px;
+                    transition: background-color 800ms, margin-right 400ms;
                 }
                 &:hover {
                     box-shadow: 4px 6px 10px #cfcece, -4px -4px 10px #cfcece;
                     cursor: pointer;
+                    .dish_main {
+                        overflow: hidden;
+                        h4 {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
+                        }
+                        p {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .dish_price {
+                        margin-right: -20px;
+                    }
                     i {
                         background-color: $color-tertiary;
-                        margin-right: 0;
-                        color: white;
+                        margin-right: -5px;
+                        margin-left: 0;
+                    }
+                }
+                &:active {
+                    i {
+                        background-color: $color-primary;
                     }
                 }
             }

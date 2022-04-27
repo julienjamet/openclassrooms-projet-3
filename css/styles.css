@@ -430,48 +430,71 @@ main .menu .block__dishes .dish {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   background-color: white;
-  height: 80px;
+  min-height: 80px;
+  max-height: 100px;
   width: 100%;
   max-width: 375px;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px #e0e0e0;
           box-shadow: 5px 5px 10px #e0e0e0;
-  padding: 0 0 0 10px;
+  padding: 0 5px 0 5px;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
 main .menu .block__dishes .dish_main {
-  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  width: 85%;
   overflow: hidden;
+  -webkit-transition: overflow 400ms 400ms;
+  transition: overflow 400ms 400ms;
 }
 
 main .menu .block__dishes .dish_main h4 {
-  margin-bottom: -5px;
+  margin: 5px 0 5px 0;
+  -webkit-transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+  transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+}
+
+main .menu .block__dishes .dish_main p {
+  margin: 0;
+  -webkit-transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+  transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
 }
 
 main .menu .block__dishes .dish_price {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   font-weight: bold;
+  padding-right: 40px;
 }
 
 main .menu .block__dishes .dish i {
-  height: 100%;
+  min-height: 80px;
   width: 0%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 20px;
-  color: #f7f7f7;
-  background-color: #f7f7f7;
-  padding: 8% 14% 5% 8%;
+  color: white;
+  background-color: #99E2D0;
+  padding: 30px 14% 30px 8%;
   border-radius: 0 20px 20px 0;
-  margin-right: -90px;
-  -webkit-transition: color 1200ms, background-color 1200ms, margin-right 800ms;
-  transition: color 1200ms, background-color 1200ms, margin-right 800ms;
+  margin-right: -100px;
+  margin-left: 0px;
+  -webkit-transition: background-color 800ms, margin-right 400ms;
+  transition: background-color 800ms, margin-right 400ms;
 }
 
 main .menu .block__dishes .dish:hover {
@@ -480,10 +503,34 @@ main .menu .block__dishes .dish:hover {
   cursor: pointer;
 }
 
+main .menu .block__dishes .dish:hover .dish_main {
+  overflow: hidden;
+}
+
+main .menu .block__dishes .dish:hover .dish_main h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .menu .block__dishes .dish:hover .dish_main p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .menu .block__dishes .dish:hover .dish_price {
+  margin-right: -20px;
+}
+
 main .menu .block__dishes .dish:hover i {
   background-color: #99E2D0;
-  margin-right: 0;
-  color: white;
+  margin-right: -5px;
+  margin-left: 0;
+}
+
+main .menu .block__dishes .dish:active i {
+  background-color: #9356DC;
 }
 
 footer {
