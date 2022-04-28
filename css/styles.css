@@ -407,7 +407,6 @@ main .menu .menu_title i {
   font-size: 25px;
   cursor: pointer;
   padding-left: 40px;
-  z-index: 1;
 }
 
 main .menu .menu_title .fa-solid {
@@ -514,18 +513,18 @@ main .menu .block__dishes .dish .i {
   border-radius: 0 20px 20px 0;
   margin-right: -100px;
   margin-left: 0px;
-  -webkit-transition: background-color 800ms, margin-right 400ms;
-  transition: background-color 800ms, margin-right 400ms;
+  -webkit-transition: margin-right 400ms;
+  transition: margin-right 400ms;
 }
 
 main .menu .block__dishes .dish .i i {
   font-size: 30px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 600ms;
-  transition: -webkit-transform 600ms;
-  transition: transform 600ms;
-  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: -webkit-transform 700ms;
+  transition: -webkit-transform 700ms;
+  transition: transform 700ms;
+  transition: transform 700ms, -webkit-transform 700ms;
 }
 
 main .menu .block__dishes .dish:hover {

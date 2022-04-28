@@ -276,7 +276,6 @@ main {
                 font-size: 25px;
                 cursor: pointer;
                 padding-left: 40px;
-                z-index: 1;
             }
             .fa-solid {
                 color: $color-primary;
@@ -345,11 +344,11 @@ main {
                     border-radius: 0 20px 20px 0;
                     margin-right: -100px;
                     margin-left: 0px;
-                    transition: background-color 800ms, margin-right 400ms;
+                    transition: margin-right 400ms;
                     i {
                         font-size: 30px;
                         transform: rotate(180deg);
-                        transition: transform 600ms;
+                        transition: transform 700ms;
                     }
                 }
                 &:hover {
