@@ -406,6 +406,8 @@ main .menu .menu_title i {
   top: 20px;
   font-size: 25px;
   cursor: pointer;
+  padding-left: 40px;
+  z-index: 1;
 }
 
 main .menu .menu_title .fa-solid {
@@ -565,6 +567,27 @@ main .menu .block__dishes .dish:hover .i i {
 
 main .menu .block__dishes .dish:active .i {
   background-color: #9356DC;
+}
+
+main .menu button {
+  border-radius: 50px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  height: 70px;
+  width: 250px;
+  border: none;
+  cursor: pointer;
+}
+
+main .menu button:hover {
+  border: 2px solid grey;
+  -webkit-box-shadow: 4px 6px 10px #cfcece;
+          box-shadow: 4px 6px 10px #cfcece;
+}
+
+main .menu button p {
+  width: 100%;
+  color: white;
+  font-size: 20px;
 }
 
 footer {

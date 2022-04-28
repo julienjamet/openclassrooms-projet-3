@@ -275,6 +275,8 @@ main {
                 top: 20px;
                 font-size: 25px;
                 cursor: pointer;
+                padding-left: 40px;
+                z-index: 1;
             }
             .fa-solid {
                 color: $color-primary;
@@ -383,6 +385,23 @@ main {
                         background-color: $color-primary;
                     }
                 }
+            }
+        }
+        button {
+            border-radius: 50px;
+            background: $gradient;
+            height: 70px;
+            width: 250px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+                border: 2px solid grey;
+                box-shadow: 4px 6px 10px #cfcece;
+            }
+            p {
+                width: 100%;
+                color: white;
+                font-size: 20px;
             }
         }
     }
