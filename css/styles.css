@@ -369,7 +369,7 @@ main .restaurants .block__card .resto__card .card_info .fa-solid {
   transition: opacity 800ms;
 }
 
-main .restaurants .block__card .resto__card .card_info .fa-solid:active {
+main .restaurants .block__card .resto__card .card_info .fa-solid:hover {
   opacity: 1;
 }
 
@@ -417,7 +417,7 @@ main .menu .menu_title .fa-solid {
   transition: opacity 800ms;
 }
 
-main .menu .menu_title .fa-solid:active {
+main .menu .menu_title .fa-solid:hover {
   opacity: 1;
 }
 
