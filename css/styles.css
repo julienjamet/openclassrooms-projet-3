@@ -34,6 +34,32 @@ h2 {
   margin-left: 15px;
 }
 
+@-webkit-keyframes prog {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes prog {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,6 +486,56 @@ main .menu .block__dishes .dish {
   padding: 0 5px 0 5px;
   margin-bottom: 20px;
   overflow: hidden;
+}
+
+main .menu .block__dishes .dish_1 {
+  -webkit-animation: prog 1000ms 400ms both ease-in-out;
+          animation: prog 1000ms 400ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_2 {
+  -webkit-animation: prog 1000ms 800ms both ease-in-out;
+          animation: prog 1000ms 800ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_3 {
+  -webkit-animation: prog 1000ms 1200ms both ease-in-out;
+          animation: prog 1000ms 1200ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_4 {
+  -webkit-animation: prog 1000ms 1600ms both ease-in-out;
+          animation: prog 1000ms 1600ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_5 {
+  -webkit-animation: prog 1000ms 2000ms both ease-in-out;
+          animation: prog 1000ms 2000ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_6 {
+  -webkit-animation: prog 1000ms 2400ms both ease-in-out;
+          animation: prog 1000ms 2400ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_7 {
+  -webkit-animation: prog 1000ms 2800ms both ease-in-out;
+          animation: prog 1000ms 2800ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_8 {
+  -webkit-animation: prog 1000ms 3200ms both ease-in-out;
+          animation: prog 1000ms 3200ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_9 {
+  -webkit-animation: prog 1000ms 3600ms both ease-in-out;
+          animation: prog 1000ms 3600ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_10 {
+  -webkit-animation: prog 1000ms 4000ms both ease-in-out;
+          animation: prog 1000ms 4000ms both ease-in-out;
 }
 
 main .menu .block__dishes .dish_main {

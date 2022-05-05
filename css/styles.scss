@@ -31,8 +31,16 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $gradient: linear-gradient(170deg, $color-secondary, $color-primary);
-
-
+@keyframes prog {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+}
 
 header {
     display: flex;
@@ -310,6 +318,36 @@ main {
                 padding: 0 5px 0 5px;
                 margin-bottom: 20px;
                 overflow: hidden;
+                &_1 {
+                    animation: prog 1000ms 400ms both ease-in-out;
+                }
+                &_2 {
+                    animation: prog 1000ms 800ms both ease-in-out;
+                }
+                &_3 {
+                    animation: prog 1000ms 1200ms both ease-in-out;
+                }
+                &_4 {
+                    animation: prog 1000ms 1600ms both ease-in-out;
+                }
+                &_5 {
+                    animation: prog 1000ms 2000ms both ease-in-out;
+                }
+                &_6 {
+                    animation: prog 1000ms 2400ms both ease-in-out;
+                }
+                &_7 {
+                    animation: prog 1000ms 2800ms both ease-in-out;
+                }
+                &_8 {
+                    animation: prog 1000ms 3200ms both ease-in-out;
+                }
+                &_9 {
+                    animation: prog 1000ms 3600ms both ease-in-out;
+                }
+                &_10 {
+                    animation: prog 1000ms 4000ms both ease-in-out;
+                }
                 &_main {
                     display: flex;
                     flex-direction: column;
