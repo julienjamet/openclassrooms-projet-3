@@ -12,22 +12,6 @@
     font-family: "Shrikhand";
     src: url("../polices/Shrikhand-Regular.ttf");
 }
-@keyframes prog {
-    0% {
-        opacity: 0;
-        transform: translateY(5px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$gradient: linear-gradient(170deg, $color-secondary, $color-primary);
-
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     max-width: 1200px;
@@ -41,6 +25,86 @@ body {
     a {
         color: black;
         text-decoration: none;
+    }
+}
+
+/*VARIABLES*/
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$gradient: linear-gradient(170deg, $color-secondary, $color-primary);
+
+/*KEYFRAMES*/
+@keyframes page_delay {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes spinner {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes spinner_div {
+    0% {
+        transform: rotate(0deg);
+        border-width: 10px;
+    }
+    50% {
+        transform: rotate(180deg);
+        border-width: 1px;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-width: 10px;
+    }
+}
+@keyframes prog {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*SPINNER*/
+.header_main, .main_main, .footer_main {
+    animation: page_delay 2500ms;
+}
+.spinner {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    height: 100px;
+    width: 100px;
+    animation: spinner 2500ms forwards;
+    div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border: 10px solid transparent;
+        border-top-color: $color-primary;
+        border-radius: 100%;
+        animation: spinner_div 1500ms linear infinite;
+        &:nth-child(2) {
+            border-bottom-color: $color-primary;
+            animation: spinner_div 1500ms linear infinite;
+        }
     }
 }
 
@@ -302,34 +366,34 @@ main {
                 margin-bottom: 20px;
                 overflow: hidden;
                 &_1 {
-                    animation: prog 1000ms 400ms both ease-in-out;
-                }
-                &_2 {
                     animation: prog 1000ms 800ms both ease-in-out;
                 }
-                &_3 {
+                &_2 {
                     animation: prog 1000ms 1200ms both ease-in-out;
                 }
-                &_4 {
+                &_3 {
                     animation: prog 1000ms 1600ms both ease-in-out;
                 }
-                &_5 {
+                &_4 {
                     animation: prog 1000ms 2000ms both ease-in-out;
                 }
-                &_6 {
+                &_5 {
                     animation: prog 1000ms 2400ms both ease-in-out;
                 }
-                &_7 {
+                &_6 {
                     animation: prog 1000ms 2800ms both ease-in-out;
                 }
-                &_8 {
+                &_7 {
                     animation: prog 1000ms 3200ms both ease-in-out;
                 }
-                &_9 {
+                &_8 {
                     animation: prog 1000ms 3600ms both ease-in-out;
                 }
-                &_10 {
+                &_9 {
                     animation: prog 1000ms 4000ms both ease-in-out;
+                }
+                &_10 {
+                    animation: prog 1000ms 4400ms both ease-in-out;
                 }
                 &_main {
                     display: flex;
@@ -413,8 +477,8 @@ main {
             border: none;
             cursor: pointer;
             &:hover {
-                border: 2px solid grey;
-                box-shadow: 4px 6px 10px #cfcece;
+                opacity: .85;
+                box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
             }
             p {
                 width: 100%;
@@ -482,6 +546,7 @@ footer {
         }
     }
 }
+
 @media all and (min-width: 992px) {
     header {
         background-color: white;

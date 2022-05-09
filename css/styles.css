@@ -15,6 +15,110 @@
   src: url("../polices/Shrikhand-Regular.ttf");
 }
 
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+body .menu h2, body .logo {
+  font-family: Shrikhand;
+}
+
+body h2 {
+  margin-left: 15px;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+/*VARIABLES*/
+/*KEYFRAMES*/
+@-webkit-keyframes page_delay {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes page_delay {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spinner_div {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+
+@keyframes spinner_div {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    border-width: 10px;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    border-width: 1px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-width: 10px;
+  }
+}
+
 @-webkit-keyframes prog {
   0% {
     opacity: 0;
@@ -41,23 +145,37 @@
   }
 }
 
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto 0 auto;
+/*SPINNER*/
+.header_main, .main_main, .footer_main {
+  -webkit-animation: page_delay 2500ms;
+          animation: page_delay 2500ms;
 }
 
-body .menu h2, body .logo {
-  font-family: Shrikhand;
+.spinner {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: spinner 2500ms forwards;
+          animation: spinner 2500ms forwards;
 }
 
-body h2 {
-  margin-left: 15px;
+.spinner div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 10px solid transparent;
+  border-top-color: #9356DC;
+  border-radius: 100%;
+  -webkit-animation: spinner_div 1500ms linear infinite;
+          animation: spinner_div 1500ms linear infinite;
 }
 
-body a {
-  color: black;
-  text-decoration: none;
+.spinner div:nth-child(2) {
+  border-bottom-color: #9356DC;
+  -webkit-animation: spinner_div 1500ms linear infinite;
+          animation: spinner_div 1500ms linear infinite;
 }
 
 /*HEADER*/
@@ -448,53 +566,53 @@ main .menu .block__dishes .dish {
 }
 
 main .menu .block__dishes .dish_1 {
-  -webkit-animation: prog 1000ms 400ms both ease-in-out;
-          animation: prog 1000ms 400ms both ease-in-out;
-}
-
-main .menu .block__dishes .dish_2 {
   -webkit-animation: prog 1000ms 800ms both ease-in-out;
           animation: prog 1000ms 800ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_3 {
+main .menu .block__dishes .dish_2 {
   -webkit-animation: prog 1000ms 1200ms both ease-in-out;
           animation: prog 1000ms 1200ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_4 {
+main .menu .block__dishes .dish_3 {
   -webkit-animation: prog 1000ms 1600ms both ease-in-out;
           animation: prog 1000ms 1600ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_5 {
+main .menu .block__dishes .dish_4 {
   -webkit-animation: prog 1000ms 2000ms both ease-in-out;
           animation: prog 1000ms 2000ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_6 {
+main .menu .block__dishes .dish_5 {
   -webkit-animation: prog 1000ms 2400ms both ease-in-out;
           animation: prog 1000ms 2400ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_7 {
+main .menu .block__dishes .dish_6 {
   -webkit-animation: prog 1000ms 2800ms both ease-in-out;
           animation: prog 1000ms 2800ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_8 {
+main .menu .block__dishes .dish_7 {
   -webkit-animation: prog 1000ms 3200ms both ease-in-out;
           animation: prog 1000ms 3200ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_9 {
+main .menu .block__dishes .dish_8 {
   -webkit-animation: prog 1000ms 3600ms both ease-in-out;
           animation: prog 1000ms 3600ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_10 {
+main .menu .block__dishes .dish_9 {
   -webkit-animation: prog 1000ms 4000ms both ease-in-out;
           animation: prog 1000ms 4000ms both ease-in-out;
+}
+
+main .menu .block__dishes .dish_10 {
+  -webkit-animation: prog 1000ms 4400ms both ease-in-out;
+          animation: prog 1000ms 4400ms both ease-in-out;
 }
 
 main .menu .block__dishes .dish_main {
@@ -613,9 +731,9 @@ main .menu button {
 }
 
 main .menu button:hover {
-  border: 2px solid grey;
-  -webkit-box-shadow: 4px 6px 10px #cfcece;
-          box-shadow: 4px 6px 10px #cfcece;
+  opacity: .85;
+  -webkit-box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
+          box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
 }
 
 main .menu button p {
