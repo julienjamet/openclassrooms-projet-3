@@ -25,16 +25,13 @@ body .menu h2, body .logo {
   font-family: Shrikhand;
 }
 
-body h2 {
-  margin-left: 15px;
-}
-
 body a {
   color: black;
   text-decoration: none;
 }
 
 /*VARIABLES*/
+/*MIXINS*/
 /*KEYFRAMES*/
 @-webkit-keyframes page_delay {
   0% {
@@ -146,15 +143,10 @@ body a {
 }
 
 /*SPINNER*/
-.header_main, .main_main, .footer_main {
-  -webkit-animation: page_delay 2500ms;
-          animation: page_delay 2500ms;
-}
-
 .spinner {
   position: absolute;
-  top: 40%;
-  left: 47%;
+  top: 45%;
+  left: 46%;
   height: 100px;
   width: 100px;
   -webkit-animation: spinner 2500ms forwards;
@@ -174,8 +166,11 @@ body a {
 
 .spinner div:nth-child(2) {
   border-bottom-color: #9356DC;
-  -webkit-animation: spinner_div 1500ms linear infinite;
-          animation: spinner_div 1500ms linear infinite;
+}
+
+.header__main, .main__main, .footer__main {
+  -webkit-animation: page_delay 2500ms;
+          animation: page_delay 2500ms;
 }
 
 /*HEADER*/
@@ -252,7 +247,6 @@ header img {
 
 .intro .title h2 {
   font-size: 30px;
-  margin: 0;
 }
 
 .intro .title p {
@@ -263,9 +257,11 @@ header img {
 .intro .title button {
   height: 70px;
   width: 250px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
   border: none;
   border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 10px #e0e0e0;
+          box-shadow: 5px 5px 10px #e0e0e0;
   cursor: pointer;
 }
 
@@ -276,10 +272,11 @@ header img {
 
 .intro .title button:hover {
   opacity: .85;
-  -webkit-box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
-          box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
+  -webkit-box-shadow: 2px 2px 6px #404040;
+          box-shadow: 2px 2px 6px #404040;
 }
 
+/*MAIN*/
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +313,7 @@ main .working {
 main .working h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  margin-left: 2%;
 }
 
 main .working .block__steps {
@@ -382,7 +380,7 @@ main .working .block__steps .step .step__main p {
 }
 
 main .working .block__steps .step:hover {
-  background-color: rgba(147, 86, 220, 0.2);
+  background-color: #e4d5f6;
   cursor: default;
 }
 
@@ -394,6 +392,10 @@ main .restaurants {
   width: 100%;
   background-color: #f7f7f7;
   padding: 40px 0 80px 0;
+}
+
+main .restaurants h2 {
+  margin-left: 2%;
 }
 
 main .restaurants .block__card {
@@ -477,11 +479,10 @@ main .restaurants .block__card .resto__card:hover {
 }
 
 main .menu {
-  border-radius: 50px 50px 0 0;
   background-color: #f7f7f7;
-  width: 100%;
-  margin-top: -50px;
   padding: 20px;
+  border-radius: 50px 50px 0 0;
+  margin-top: -50px;
 }
 
 main .menu .menu_title {
@@ -495,12 +496,7 @@ main .menu .menu_title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   margin: 0 -10px 0 -10px;
-}
-
-main .menu .menu_title h2 {
-  margin-left: 0;
 }
 
 main .menu .menu_title i {
@@ -509,7 +505,6 @@ main .menu .menu_title i {
   top: 20px;
   font-size: 25px;
   cursor: pointer;
-  padding-left: 40px;
 }
 
 main .menu .menu_title .fa-solid {
@@ -539,7 +534,6 @@ main .menu .block__dishes {
 
 main .menu .block__dishes h3 {
   font-weight: normal;
-  margin-left: 5px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-bottom: 2px solid #99E2D0;
@@ -549,18 +543,15 @@ main .menu .block__dishes .dish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: white;
-  min-height: 80px;
-  max-height: 100px;
+  min-height: 90px;
+  max-height: 90px;
   width: 100%;
   max-width: 375px;
+  padding: 0 5px 0px 5%;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px #e0e0e0;
           box-shadow: 5px 5px 10px #e0e0e0;
-  padding: 0 5px 0 5px;
   margin-bottom: 20px;
   overflow: hidden;
 }
@@ -626,46 +617,35 @@ main .menu .block__dishes .dish_main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100%;
   width: 85%;
   overflow: hidden;
-  -webkit-transition: overflow 400ms 400ms;
-  transition: overflow 400ms 400ms;
 }
 
 main .menu .block__dishes .dish_main h4 {
   margin: 5px 0 5px 0;
-  -webkit-transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
-  transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
 }
 
 main .menu .block__dishes .dish_main p {
   margin: 0;
-  -webkit-transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
-  transition: white-space 400ms, overflow 400ms, text-overflow 400ms;
+  padding-right: 5px;
 }
 
 main .menu .block__dishes .dish_price {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-weight: bold;
-  padding-right: 40px;
-  padding-bottom: 6px;
+  padding-right: 2%;
+  padding-bottom: 4px;
 }
 
 main .menu .block__dishes .dish .i {
-  min-height: 80px;
-  width: 0%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: 20px;
+  height: 90px;
+  width: 90px;
   color: white;
   background-color: #99E2D0;
-  padding: 30px 15% 30px 7%;
+  padding: 30px;
   border-radius: 0 20px 20px 0;
-  margin-right: -100px;
-  margin-left: 0px;
+  margin: 0 -100px 0 30px;
   -webkit-transition: margin-right 400ms;
   transition: margin-right 400ms;
 }
@@ -686,20 +666,10 @@ main .menu .block__dishes .dish:hover {
   cursor: pointer;
 }
 
-main .menu .block__dishes .dish:hover .dish_main {
-  overflow: hidden;
-}
-
-main .menu .block__dishes .dish:hover .dish_main h4 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 main .menu .block__dishes .dish:hover .dish_main p {
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 main .menu .block__dishes .dish:hover .dish_price {
@@ -707,9 +677,7 @@ main .menu .block__dishes .dish:hover .dish_price {
 }
 
 main .menu .block__dishes .dish:hover .i {
-  background-color: #99E2D0;
   margin-right: -5px;
-  margin-left: 0;
 }
 
 main .menu .block__dishes .dish:hover .i i {
@@ -722,35 +690,32 @@ main .menu .block__dishes #command {
 }
 
 main .menu button {
-  border-radius: 50px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
   height: 70px;
   width: 250px;
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
   border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 5px 5px 10px #e0e0e0;
+          box-shadow: 5px 5px 10px #e0e0e0;
   cursor: pointer;
+}
+
+main .menu button p {
+  font-size: 20px;
+  color: white;
 }
 
 main .menu button:hover {
   opacity: .85;
-  -webkit-box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
-          box-shadow: 2px 2px 6px #404040, -2px -2px 6px #404040;
+  -webkit-box-shadow: 2px 2px 6px #404040;
+          box-shadow: 2px 2px 6px #404040;
 }
 
-main .menu button p {
-  width: 100%;
-  color: white;
-  font-size: 20px;
-}
-
+/*FOOTER*/
 footer {
   color: white;
   background-color: #404040;
   padding: 30px 0 40px 30px;
-}
-
-footer img {
-  margin-bottom: 20px;
-  height: 20px;
 }
 
 footer .footer {
@@ -794,10 +759,10 @@ footer .footer a:hover {
   text-decoration: underline;
 }
 
+/*RESPONSIVE*/
 @media all and (min-width: 768px) {
   main .main_pic {
     max-height: 300px;
-    width: 100%;
     -o-object-position: 0 -150px;
        object-position: 0 -150px;
   }
@@ -808,26 +773,25 @@ footer .footer a:hover {
     right: 20px;
   }
   main .menu .block__dishes .dish {
-    padding-left: 20px;
+    padding-left: 25px;
   }
 }
 
 @media all and (min-width: 992px) {
-  header {
-    background-color: white;
-  }
   main .main_pic {
     max-height: 350px;
-    width: 100%;
     -o-object-position: 0 -200px;
        object-position: 0 -200px;
   }
   main .menu .menu_title {
-    padding-left: 20px;
+    padding-left: 30px;
+  }
+  main .menu .menu_title I {
+    right: 30px;
   }
   main .menu .block__dishes .dish {
     max-width: 420px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
