@@ -1,38 +1,3 @@
-/*GENERAL*/
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../polices/Roboto-Medium.ttf");
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../polices/Shrikhand-Regular.ttf");
-}
-
-body {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto 0 auto;
-}
-
-body .menu h2, body .logo {
-  font-family: Shrikhand;
-}
-
-body a {
-  color: black;
-  text-decoration: none;
-}
-
-/*VARIABLES*/
-/*MIXINS*/
-/*KEYFRAMES*/
 @-webkit-keyframes page_delay {
   0% {
     opacity: 0;
@@ -44,6 +9,7 @@ body a {
     opacity: 1;
   }
 }
+
 @keyframes page_delay {
   0% {
     opacity: 0;
@@ -144,7 +110,37 @@ body a {
   }
 }
 
-/*SPINNER*/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../polices/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand-Regular.ttf");
+}
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+body .menu h2, body .logo {
+  font-family: Shrikhand;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
 .spinner {
   position: fixed;
   display: -webkit-box;
@@ -178,12 +174,6 @@ body a {
   border-bottom-color: #9356DC;
 }
 
-.header__main, .main__main, .footer__main {
-  -webkit-animation: page_delay 2500ms;
-          animation: page_delay 2500ms;
-}
-
-/*HEADER*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +201,6 @@ header img {
   z-index: 0;
 }
 
-/*INTRO*/
 .intro {
   width: 100%;
 }
@@ -286,7 +275,6 @@ header img {
           box-shadow: 2px 2px 6px #404040;
 }
 
-/*MAIN*/
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,52 +554,52 @@ main .menu .block__dishes .dish {
   overflow: hidden;
 }
 
-main .menu .block__dishes .dish_1 {
+main .menu .block__dishes .dish--1 {
   -webkit-animation: prog 1000ms 800ms both ease-in-out;
           animation: prog 1000ms 800ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_2 {
+main .menu .block__dishes .dish--2 {
   -webkit-animation: prog 1000ms 1200ms both ease-in-out;
           animation: prog 1000ms 1200ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_3 {
+main .menu .block__dishes .dish--3 {
   -webkit-animation: prog 1000ms 1600ms both ease-in-out;
           animation: prog 1000ms 1600ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_4 {
+main .menu .block__dishes .dish--4 {
   -webkit-animation: prog 1000ms 2000ms both ease-in-out;
           animation: prog 1000ms 2000ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_5 {
+main .menu .block__dishes .dish--5 {
   -webkit-animation: prog 1000ms 2400ms both ease-in-out;
           animation: prog 1000ms 2400ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_6 {
+main .menu .block__dishes .dish--6 {
   -webkit-animation: prog 1000ms 2800ms both ease-in-out;
           animation: prog 1000ms 2800ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_7 {
+main .menu .block__dishes .dish--7 {
   -webkit-animation: prog 1000ms 3200ms both ease-in-out;
           animation: prog 1000ms 3200ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_8 {
+main .menu .block__dishes .dish--8 {
   -webkit-animation: prog 1000ms 3600ms both ease-in-out;
           animation: prog 1000ms 3600ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_9 {
+main .menu .block__dishes .dish--9 {
   -webkit-animation: prog 1000ms 4000ms both ease-in-out;
           animation: prog 1000ms 4000ms both ease-in-out;
 }
 
-main .menu .block__dishes .dish_10 {
+main .menu .block__dishes .dish--10 {
   -webkit-animation: prog 1000ms 4400ms both ease-in-out;
           animation: prog 1000ms 4400ms both ease-in-out;
 }
@@ -721,7 +709,6 @@ main .menu button:hover {
           box-shadow: 2px 2px 6px #404040;
 }
 
-/*FOOTER*/
 footer {
   color: white;
   background-color: #404040;
@@ -769,7 +756,6 @@ footer .footer a:hover {
   text-decoration: underline;
 }
 
-/*RESPONSIVE*/
 @media all and (min-width: 768px) {
   main .main_pic {
     max-height: 300px;
@@ -803,5 +789,10 @@ footer .footer a:hover {
     max-width: 420px;
     padding-left: 30px;
   }
+}
+
+.header__main, .main__main, .footer__main {
+  -webkit-animation: page_delay 2500ms;
+          animation: page_delay 2500ms;
 }
 /*# sourceMappingURL=styles.css.map */
