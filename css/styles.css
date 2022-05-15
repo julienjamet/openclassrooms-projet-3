@@ -264,7 +264,7 @@ header img {
   cursor: pointer;
 }
 
-.intro .title button p {
+.intro .title button span {
   font-size: 20px;
   color: white;
 }
@@ -698,7 +698,7 @@ main .menu button {
   cursor: pointer;
 }
 
-main .menu button p {
+main .menu button span {
   font-size: 20px;
   color: white;
 }
