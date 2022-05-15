@@ -22,125 +22,153 @@
             <img class="main_pic" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note_enchantée" />
 
             <section class="menu">
-                <h2>La note enchantée</h2>
+                <div class="menu_title">
+                    <h2>La note enchantée</h2>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
 
                 <div class="block__dishes">
                     <h3>ENTRÉES</h3>
             
-                    <div class="dish">
+                    <div class="dish dish--1" onclick="">
                         <div class="dish_main">
                             <h4>Ravioles de foie gras</h4>
                             <p>Accompagnés de leur crème à la truffe</p>
                         </div>
                         <p class="dish_price">25€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--2" onclick="">
                         <div class="dish_main">
                             <h4>Caviar osciètre</h4>
                             <p>Sur blini à la farine de blé noir</p>
                         </div>
                         <p class="dish_price">35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--3" onclick="">
                         <div class="dish_main">
                             <h4>Homard et espuma de potiron</h4>
                             <p>Mariné aux zestes d'orange</p>
                         </div>
                         <p class="dish_price">20€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--4" onclick="">
                         <div class="dish_main">
                             <h4>Foie gras de canard cuit entier</h4>
                             <p>Confiture de figue et pain toasté</p>
                         </div>
                         <p class="dish_price">35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
 
                 <div class="block__dishes">
                     <h3>PLATS</h3>
             
-                    <div class="dish">
+                    <div class="dish dish--5" onclick="">
                         <div class="dish_main">
                             <h4>Noix de coquilles Saint-Jacques</h4>
                             <p>Sur lit de purée de céleri-rave</p>
                         </div>
                         <p class="dish_price">40€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--6" onclick="">
                         <div class="dish_main">
                             <h4>Langoustine poêlée</h4>
                             <p>Purée de patate douce</p>
                         </div>
                         <p class="dish_price">35€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--7" onclick="">
                         <div class="dish_main">
                             <h4>Mijoté de queue de boeuf</h4>
                             <p>Et riz sauvage aux zestes de citron</p>
                         </div>
                         <p class="dish_price">44€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
                 </div>
 
                 <div class="block__dishes">
                     <h3>DESSERTS</h3>
             
-                    <div class="dish">
+                    <div class="dish dish--8" onclick="">
                         <div class="dish_main">
                             <h4>Macaron noisette et chocolat</h4>
                             <p>Glace au caramel brun et sel de Guérande</p>
                         </div>
                         <p class="dish_price">18€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--9" onclick="">
                         <div class="dish_main">
                             <h4>Baba au rhum revisité</h4>
                             <p>Avec son coulis de citron</p>
                         </div>
                         <p class="dish_price">22€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
 
-                    <div class="dish">
+                    <div class="dish dish--10" onclick="">
                         <div class="dish_main">
                             <h4>Tarte au citron meringuée</h4>
                             <p>Déstructurée</p>
                         </div>
                         <p class="dish_price">23€</p>
-                        <i class="fa-solid fa-circle-check"></i>
+                        <div class="i">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
                     </div>
+
+                    <button id="command">
+                        <span>Commander</span>
+                    </button>
                 </div>
             </section>
         </main>
 
         <footer>
-            <p class="logo">Ohmyfood</p>
+            <p class="logo" id="footer__logo">Ohmyfood</p>
             <div class="footer">
                 <div>
                     <i class="fa-solid fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a>
+                    <a href="#footer__logo">Proposer un restaurant</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-handshake-angle"></i>
-                    <a href="#" id="partners">Devenir partenaire</a>
+                    <a href="#footer__logo" id="partners">Devenir partenaire</a>
                 </div>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
+                <a href="#footer__logo">Mentions légales</a>
+                <a href="mailto:ohmyfood@gmail.com" target="_blank">Contact</a>
             </div>
         </footer>
     </body>
