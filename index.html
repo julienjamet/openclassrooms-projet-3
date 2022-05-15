@@ -10,11 +10,16 @@
 	</head>
 
     <body>
-        <header>
+        <div class="spinner">
+            <div></div>
+            <div></div>
+        </div>
+
+        <header class="header__main">
             <img src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" />
         </header>
 
-        <main>
+        <main class="main__main">
             <section class="intro">
                 <div class="location">
                     <i class="fa-solid fa-location-dot"></i>
@@ -24,11 +29,9 @@
                 <div class="title">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    <a href="#resto_title">
-                        <button>
-                            <p>Explorer nos restaurants</p>
-                        </button>
-                    </a>
+                    <button>
+                        <span>Explorer nos restaurants</span>
+                    </button>
                 </div>
             </section>
         
@@ -36,7 +39,7 @@
                 <h2>Fonctionnement</h2>
 
                 <div class="block__steps">
-                    <div class="step">
+                    <div class="step" onclick="">
                         <p class="nbr">1</p>
                         <div class="step__main">
                             <i class="fa-solid fa-mobile-screen-button"></i>
@@ -44,7 +47,7 @@
                         </div>
                     </div>
 
-                    <div class="step">
+                    <div class="step" onclick="">
                         <p class="nbr">2</p>
                         <div class="step__main">
                             <i class="fa-solid fa-list"></i>
@@ -52,7 +55,7 @@
                         </div>
                     </div>
 
-                    <div class="step">
+                    <div class="step" onclick="">
                         <p class="nbr">3</p>
                         <div class="step__main">
                             <i class="fa-solid fa-store"></i>
@@ -123,19 +126,19 @@
             </section>
         </main>
 
-        <footer>
-            <p class="logo">Ohmyfood</p>
+        <footer class="footer__main">
+            <p class="logo" id="footer__logo">Ohmyfood</p>
             <div class="footer">
                 <div>
                     <i class="fa-solid fa-utensils"></i>
-                    <a href="#">Proposer un restaurant</a>
+                    <a href="#footer__logo">Proposer un restaurant</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-handshake-angle"></i>
-                    <a href="#" id="partners">Devenir partenaire</a>
+                    <a href="#footer__logo" id="partners">Devenir partenaire</a>
                 </div>
-                <a href="#">Mentions légales</a>
-                <a href="#">Contact</a>
+                <a href="#footer__logo">Mentions légales</a>
+                <a href="mailto:ohmyfood@gmail.com" target="_blank">Contact</a>
             </div>
         </footer>
     </body>

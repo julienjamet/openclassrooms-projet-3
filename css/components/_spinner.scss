@@ -1,0 +1,22 @@
+.spinner {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    animation: spinner 2500ms forwards;
+    div {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border: 10px solid transparent;
+        border-top-color: $color-primary;
+        border-radius: 100%;
+        animation: spinner_div 1500ms linear infinite;
+        &:nth-child(2) {
+            border-bottom-color: $color-primary;
+        }
+    }
+}

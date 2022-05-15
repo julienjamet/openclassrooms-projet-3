@@ -1,0 +1,22 @@
+@media all and (min-width: 992px) {
+    main {
+        .main_pic {
+            max-height: 350px;
+            object-position: 0 -200px;
+        }
+        .menu {
+            .menu_title {
+                padding-left: 30px;
+                I {
+                    right: 30px;
+                }
+            }
+            .block__dishes {
+                .dish {
+                    max-width: 420px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
