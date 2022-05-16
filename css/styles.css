@@ -664,6 +664,12 @@ main .menu .block__dishes .dish:hover {
   cursor: pointer;
 }
 
+main .menu .block__dishes .dish:hover .dish_main #st-jacques {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 main .menu .block__dishes .dish:hover .dish_main p {
   white-space: nowrap;
   text-overflow: ellipsis;
