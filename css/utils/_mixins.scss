@@ -159,6 +159,11 @@
         box-shadow: 4px 6px 10px #cfcece, -4px -4px 10px #cfcece;
         cursor: pointer;
         .dish_main {
+            #st-jacques {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
             p {
                 white-space: nowrap;
                 text-overflow: ellipsis;
