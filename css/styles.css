@@ -128,7 +128,7 @@
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto 0 auto;
 }
 
@@ -154,7 +154,7 @@ body a {
           align-items: center;
   height: 100vh;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   -webkit-animation: spinner 2500ms forwards;
           animation: spinner 2500ms forwards;
 }
@@ -292,6 +292,8 @@ main .main_pic {
   max-height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0 55%;
+     object-position: 0 55%;
 }
 
 main .working {
@@ -445,10 +447,11 @@ main .restaurants .block__card .resto__card .new {
 main .restaurants .block__card .resto__card .card_info {
   position: relative;
   padding-left: 20px;
-  margin-top: -8px;
+  margin-top: 0;
 }
 
 main .restaurants .block__card .resto__card .card_info h3 {
+  margin-top: 10px;
   margin-bottom: -10px;
 }
 
@@ -477,6 +480,17 @@ main .restaurants .block__card .resto__card:hover {
 }
 
 main .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 50px 50px 0 0;
@@ -494,7 +508,8 @@ main .menu .menu_title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 -10px 0 -10px;
+  min-width: 260px;
+  width: 100%;
 }
 
 main .menu .menu_title i {
@@ -528,6 +543,7 @@ main .menu .block__dishes {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 main .menu .block__dishes h3 {
@@ -689,8 +705,8 @@ main .menu .block__dishes .dish:hover .i i {
           transform: rotate(360deg);
 }
 
-main .menu .block__dishes #command {
-  margin: 60px 0 60px 0;
+main .menu #command {
+  margin: 40px 0 40px 0;
 }
 
 main .menu button {
@@ -765,8 +781,6 @@ footer .footer a:hover {
 @media all and (min-width: 768px) {
   main .main_pic {
     max-height: 300px;
-    -o-object-position: 0 -150px;
-       object-position: 0 -150px;
   }
   main .menu .menu_title {
     padding-left: 20px;
@@ -780,20 +794,59 @@ footer .footer a:hover {
 }
 
 @media all and (min-width: 992px) {
+  main .working .block__steps {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 280px;
+    width: 90%;
+  }
+  main .working .block__steps .step {
+    width: 30%;
+    max-width: 375px;
+  }
+  main .restaurants .block__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 650px;
+    max-width: 1150px;
+    padding: 0 8% 0 8%;
+    margin: 0 auto 0 auto;
+  }
   main .main_pic {
     max-height: 350px;
-    -o-object-position: 0 -200px;
-       object-position: 0 -200px;
   }
-  main .menu .menu_title {
-    padding-left: 30px;
+  main .menu .block__dishes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 310px;
+    max-width: 1200px;
+    margin-bottom: 40px;
   }
-  main .menu .menu_title I {
-    right: 30px;
+  main .menu .block__dishes h3 {
+    position: absolute;
+    left: 8%;
   }
   main .menu .block__dishes .dish {
-    max-width: 420px;
-    padding-left: 30px;
+    width: 30%;
+    max-width: 350px;
+    padding-left: 20px;
+    margin: 90px 0 0 0;
+  }
+  main .menu .block__dishes #foie-gras {
+    margin-top: 30px;
   }
 }
 
