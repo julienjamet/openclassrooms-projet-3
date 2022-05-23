@@ -128,6 +128,7 @@
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 body .menu h2, body .logo {
