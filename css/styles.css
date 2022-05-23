@@ -128,8 +128,6 @@
 
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  max-width: 1600px;
-  margin: 0 auto 0 auto;
 }
 
 body .menu h2, body .logo {
